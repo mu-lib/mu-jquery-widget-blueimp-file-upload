@@ -6,10 +6,8 @@
     module.exports = factory.apply(root, modules.map(require));
   } else {
     root["mu-jquery-widget-blueimp-file-upload/widget"] = factory.apply(root, modules.map(function (m) {
-      return this[m] || root[m];
-    }, {
-        "Router": root.Router
-      }));
+      return root[m];
+    }));
   }
 })(["mu-jquery-widget/widget"], function (widget) {
   var slice = Array.prototype.slice;
