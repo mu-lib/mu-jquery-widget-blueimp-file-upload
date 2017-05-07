@@ -1,0 +1,25 @@
+{
+  "name": "mu-jquery-widget-blueimp-file-upload",
+  "authors": [
+    "Mikael Karon <mikael@karon.se>"
+  ],
+  "description": "mu-jquery-widget jQuery Upload widget",
+  "main": "",
+  "license": "MIT",
+  "homepage": "https://github.com/mu-lib/mu-jquery-widget-blueimp-file-upload#readme",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "tests",
+    "examples"
+  ],
+  "dependencies": {
+    "mu-jquery-widget": "^17.0.3",
+    "blueimp-file-upload": "^9.18.0"
+  },
+  "devDependencies": {
+    "jquery": "^3.2.1",
+    "mu-jquery-app": "21.0.0"
+  }
+}
