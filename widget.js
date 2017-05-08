@@ -21,9 +21,9 @@
         me[me[method] ? method + "$fileupload" : method] = this;
       }
 
-      $element.fileupload(me.$.extend({}, $element.data("mu-jquery-widget-blueimp-file-upload"), {
+      $element.fileupload(me.$.extend({}, $element.data("mu-jquery-widget-blueimp-file-upload"), $element.is(":file") ? {
         replaceFileInput: false
-      }));
+      } : false));
 
       ["add", "submit", "send", "done", "fail", "always", "progress", "progressall", "start", "stop", "change", "paste", "drop", "dragover", "chunksend", "chunkdone", "chunkfail", "chunkalways", "processstart", "process", "processdone", "processfail", "processalway", "processstop", "destroy", "destroyed", "added", "sent", "completed", "failed", "finished", "started", "stopped"].forEach(function (type) {
         $element.on("fileupload" + type, function ($e) {
